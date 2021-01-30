@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: "Quattrocento", serif;
+  height: 100%;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 100 100'%3E%3Cg stroke='%23b8b8b8' stroke-width='0' %3E%3Crect fill='%23f3f3f3' x='-60' y='-60' width='137' height='240'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.main {
+  position: fixed;
+  width: 100%;
+  left: 240px;
+}
+
+/* MENU DE NAVIGATION */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  padding-top: 5rem;
+  min-height: 100%;
+  width: 240px;
+  font-family: "Philosopher", sans-serif;
+  font-size: 1.3rem;
+  background: linear-gradient(to bottom, rgb(72, 158, 255), rgb(248, 59, 255));
+  box-shadow: inset -1px 0px 3px rgba(124, 124, 124, 0.7);
+  z-index: 10;
+}
+.menu ul {
+  list-style-type: none;
+  text-align: center;
+}
+.menu li {
+  margin: 2rem 0;
+  padding: 0.3rem;
+}
+.menu a {
+  text-decoration: none;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+
+.menu a:hover {
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
+.menu a:active {
+  opacity: 1;
+}
+
+/* A PROPOS */
+.apropos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5rem;
+  flex-wrap: wrap-reverse;
+  margin-top: 150px;
+}
+
+.apropos h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  align-self: end;
+}
+
+.apropos span {
+  font-size: 3.5rem;
+}
+
+.apropos p {
+  font-size: 1.1rem;
+  color: rgb(97, 97, 97);
+  padding: 20px 0;
+  letter-spacing: 1px;
+  word-spacing: 1.5px;
+  line-height: 1.5em;
+  max-width: 650px;
+}
+
+.apropos button {
+  background-color: rgb(72, 158, 255);
+  border: none;
+  padding: 15px;
+  border-radius: 5rem;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  font-family: "Philosopher", sans-serif;
+  font-weight: bold;
+  margin: 15px 0;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.apropos button:hover {
+  background-color: rgb(56, 146, 248);
+  transition: 0.2s;
+}
+
+.apropos button:active {
+  background-color: rgb(38, 137, 250);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+
+.apropos img {
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 20px 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  
+}
+
+@media only screen and (max-width: 1200px) {
+  .apropos p {
+    margin-right: 240px;
+  }
+  .apropos {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 685px) {
+  .apropos img {
+    height: 100px;
+  }
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: calc(100% - 240px);
+  height: 90px;
+  background-color: rgb(255, 255, 255);
+  bottom: 0;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+  margin: 1.1rem;
+  padding: 1rem;
+}
+
+footer img {
+  height: 36px;
+  opacity: 0.6;
+}
+footer a:hover {
+  background-color: rgb(235, 235, 235);
+  border-radius: 1rem;
+  transition: 0.1s;
+}
